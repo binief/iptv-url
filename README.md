@@ -6,19 +6,64 @@ working channels found in community lists around the web.
 
 **Last verified: 2026-09-30 · 71 channels**
 
-## 📺 Playlist URL
+---
 
-Paste this into any IPTV player (VLC, TiviMate, OTT Navigator, iMPlayer, Kodi PVR Simple Client, etc.):
+## 📺 Playlist URLs
 
+Paste any of the following URLs into your IPTV player:
+
+### Primary Raw URL
 ```
 https://raw.githubusercontent.com/binief/iptv-url/main/malayalam.m3u
 ```
 
-CDN mirror (sometimes faster, cached):
-
+### CDN Mirrors (Recommended if raw GitHub is blocked by your ISP)
 ```
 https://cdn.jsdelivr.net/gh/binief/iptv-url@main/malayalam.m3u
 ```
+```
+https://fastly.jsdelivr.net/gh/binief/iptv-url@main/malayalam.m3u
+```
+```
+https://raw.githack.com/binief/iptv-url/main/malayalam.m3u
+```
+
+---
+
+## ⚠️ Getting "Invalid M3U Link" or "Failed to Load"?
+
+If your player reports **"Invalid M3U link"**, **"Invalid playlist URL"**, or **"Failed to download playlist"**, check these common causes and fixes:
+
+### 1. You copied the GitHub webpage URL instead of the Raw URL
+- ❌ **Wrong:** `https://github.com/binief/iptv-url/blob/main/malayalam.m3u` *(This is an HTML webpage, not an M3U file)*
+- ✅ **Correct:** `https://raw.githubusercontent.com/binief/iptv-url/main/malayalam.m3u` or the CDN mirror below.
+
+### 2. `raw.githubusercontent.com` is blocked by your ISP (Very common in India: Jio, Airtel, Vi, BSNL)
+Many Indian ISPs block or drop connections to GitHub's raw domain. If the playlist fails to load, **use the jsDelivr CDN mirror instead**:
+```
+https://cdn.jsdelivr.net/gh/binief/iptv-url@main/malayalam.m3u
+```
+
+### 3. Typo when entering the link on TV / Firestick remote
+Double-check character spelling, uppercase/lowercase letters, and ensure `https://` is included.
+
+### 4. Alternative: Load as a Local File
+If remote URLs fail on your device:
+1. Download `malayalam.m3u` to your phone/PC/USB drive.
+2. In your IPTV player, choose **Add Playlist → Local File / Select File** and select `malayalam.m3u`.
+
+---
+
+## 📱 App Setup Guides
+
+- **TiviMate:** `Add Playlist` → `M3U playlist` → Enter URL (or select local file) → `Next`
+- **OTT Navigator:** `Settings` → `Provider` → `Add provider` → `M3U Playlist` → Enter URL
+- **IPTV Smarters Pro:** `Add User` → `Load Your Playlist or File/URL` → Select `M3U URL` → Paste URL
+- **Televizo:** `Settings` → `Playlists` → `+` → `New M3U playlist` → Paste URL
+- **Kodi:** `Add-ons` → `PVR IPTV Simple Client` → `Configure` → `M3U Play List Path` → Enter URL
+- **VLC Media Player:** `Media` → `Open Network Stream` → Paste URL → `Play`
+
+---
 
 ## What's inside
 
@@ -39,6 +84,8 @@ https://cdn.jsdelivr.net/gh/binief/iptv-url@main/malayalam.m3u
 
 The Kids/Sports entries are Indian channels that iptv-org tags with Malayalam (multi-language
 audio); they are kept in separate groups so you can filter them out easily.
+
+---
 
 ## Sources
 
@@ -61,18 +108,9 @@ language code (DidikTV KPM, meWATCH, NTV7, RTM Parlimen, SelangorTV).
 ## Notes
 
 - Streams were verified at the HLS-manifest level on **2026-09-30**. Free IPTV links rot
-  quickly — expect occasional breakage. Re-run/PR fixes welcome.
+  quickly — expect occasional breakage.
 - Some streams may be **geo-restricted** (particularly the Sony pages.dev links and channels
   served from Indian CDNs) depending on where you watch from.
 - `[Not 24/7]` channels only broadcast part of the day.
 - This playlist aggregates publicly available free streams for personal use, same as
   iptv-org does. No paid/subscription channels are included.
-
-## Usage
-
-**VLC:** Media → Open Network Stream → paste the playlist URL
-(not VLC's best format — a dedicated IPTV app is recommended for EPG/logos/groups)
-
-**TiviMate / OTT Navigator / iMPlayer:** Add playlist → M3U URL → paste
-
-**Kodi:** PVR IPTV Simple Client → M3U URL → paste
