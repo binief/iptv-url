@@ -26,7 +26,7 @@ https://cdn.jsdelivr.net/gh/binief/iptv-url@main/malayalam.m3u
 |---|---|
 | Malayalam News | 15 — Asianet News, Manorama News, Mathrubhumi News, News18 Kerala, Media One, 24 News, Kairali News, Janam TV, Reporter TV, Raj News, Big TV 24x7, Real News Kerala, VBC News, Eagle One News, Citi News |
 | Malayalam Entertainment | 17 — Asianet HD, Asianet Middle East, Mazhavil Manorama (SD/HD/International), Amrita TV, DD Malayalam, Jaihind TV, Kairali TV, Jeevan TV, Kerala Vision, Darshana TV, Flowers TV USA, Anand TV, Magnavision TV, Pravasi Channel, Pulari TV |
-| Malayalam Movies | 1 — Asianet Movies HD |
+| Malayalam Movies | 1 — Asianet Movies |
 | Malayalam Music | 1 — Raj Musix Malayalam |
 | Malayalam Lifestyle | 1 — Kappa TV |
 | Malayalam Documentary | 1 — Safari TV |
